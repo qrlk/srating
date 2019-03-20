@@ -22,7 +22,7 @@ local srating = inicfg.load({
     bmc = 0,
     fmc = 0,
     vmc = 0,
-    screen = true,
+    screen = false,
     time = "ne bilo",
     our = "amc"
   },
@@ -31,9 +31,9 @@ local srating = inicfg.load({
     lcn = 0,
     yak = 0,
     rus = 0,
-    screen = true,
+    screen = false,
     time = "ne bilo",
-    our = "rus"
+    our = "rus"  
   },
   grating =
   {
@@ -42,7 +42,7 @@ local srating = inicfg.load({
     bag = 0,
     vag = 0,
     azg = 0,
-    screen = true,
+    screen = false,
     time = "ne bilo",
     our = "rig"
   },
