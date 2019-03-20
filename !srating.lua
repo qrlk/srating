@@ -33,7 +33,7 @@ local srating = inicfg.load({
     rus = 0,
     screen = false,
     time = "ne bilo",
-    our = "rus"  
+    our = "rus"
   },
   grating =
   {
@@ -59,7 +59,10 @@ function main()
   if srating.settings.autoupdate then
     update("http://qrlk.me/dev/moonloader/srating/stats.php", '['..string.upper(thisScript().name)..']: ', "http://vk.com/qrlk.mods", "sratingchangelog")
   end
-	wait(3000)
+	while sampGetMaxPlayerId(false) < 1 do
+		 wait(100)
+	end
+	wait(200)
   if string.find(sampGetCurrentServerName(), "..p-Rp.Ru") then
     if srating.settings.startmessage then
       sampAddChatMessage(('SRATING v'..thisScript().version..' запущен. Автор: qrlk.'),
@@ -67,7 +70,6 @@ function main()
       sampAddChatMessage(('Подробнее - /sr. Отключить это сообщение - /sratingnot'), color)
     end
   else
-    print(1)
     thisScript():unload()
   end
 
