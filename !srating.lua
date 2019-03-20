@@ -59,6 +59,7 @@ function main()
   if srating.settings.autoupdate then
     update("http://qrlk.me/dev/moonloader/srating/stats.php", '['..string.upper(thisScript().name)..']: ', "http://vk.com/qrlk.mods", "sratingchangelog")
   end
+	openchangelog("sratingchangelog", "http://qrlk.me/changelog/srating")
 	while sampGetMaxPlayerId(false) < 1 do
 		 wait(100)
 	end
