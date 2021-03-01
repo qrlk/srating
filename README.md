@@ -18,7 +18,7 @@
 
 A simple **[moonloader](https://gtaforums.com/topic/890987-moonloader/)** script which allows the user to quickly check the crime rating on Samp-Rp (**[gta samp](https://sa-mp.com/)**).
 
-More info [here](https://www.blast.hk/threads/32511/) (in Russian).
+More info **[here](https://www.blast.hk/threads/32511/)** (in Russian).
 
 It requires **[CLEO 4+](http://cleo.li/?lang=ru)**, **[SAMPFUNCS 5+](https://blast.hk/threads/17/)** and **[SAMP.Lua](https://github.com/THE-FYP/SAMP.Lua)**.
 
