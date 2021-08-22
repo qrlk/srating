@@ -1,4 +1,5 @@
---Больше скриптов от автора можно найти в группе ВК: http://vk.com/qrlk.mods
+require 'lib.moonloader'
+
 script_name('srating')
 script_version("20.03.2019")
 script_authors("qrlk")
