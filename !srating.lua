@@ -61,11 +61,11 @@ function main()
   if srating.settings.autoupdate then
     update("http://qrlk.me/dev/moonloader/srating/stats.php", '['..string.upper(thisScript().name)..']: ', "http://vk.com/qrlk.mods", "sratingchangelog")
   end
-	openchangelog("sratingchangelog", "http://qrlk.me/changelog/srating")
-	while sampGetMaxPlayerId(false) < 1 do
-		 wait(100)
-	end
-	wait(200)
+  openchangelog("sratingchangelog", "http://qrlk.me/changelog/srating")
+  while sampGetMaxPlayerId(false) < 1 do
+    wait(100)
+  end
+  wait(200)
   if string.find(sampGetCurrentServerName(), "..p-Rp.Ru") then
     if srating.settings.startmessage then
       sampAddChatMessage(('SRATING v'..thisScript().version..' запущен. Автор: qrlk.'),
@@ -136,7 +136,7 @@ function parseB(text)
   if srating.brating.our == "bmc" then our = bmc end
   if srating.brating.our == "fmc" then our = fmc end
   if srating.brating.our == "vmc" then our = vmc end
-	if our == nil then our = 0 end
+  if our == nil then our = 0 end
   if tonumber(pmc) ~= 0 then sampAddChatMessage(('Pagans MC: '..pmc..' (+'..pmc - srating.brating.pmc..')'), 0x39CCCC) end
   if tonumber(omc) ~= 0 then sampAddChatMessage(('Outlaws MC: '..omc..' (+'..omc - srating.brating.omc..')'), 0x39CCCC) end
   if tonumber(smc) ~= 0 then sampAddChatMessage(('Sons of Silence MC: '..smc..' (+'..smc - srating.brating.smc..')'), 0x39CCCC) end
@@ -256,7 +256,7 @@ function parseM(text)
   if srating.mrating.our == "yak" then our = yak end
   if srating.mrating.our == "rus" then our = rus end
 
-	if our == nil then our = 0 end
+  if our == nil then our = 0 end
   if tonumber(lcn) ~= 0 then sampAddChatMessage(('La Cosa Nostra: '..lcn..' ( + '..lcn - srating.mrating.lcn..')'), 0x39CCCC) end
   if tonumber(yak) ~= 0 then sampAddChatMessage(('Yakuza: '..yak..' (+'..yak - srating.mrating.yak..')'), 0x39CCCC) end
   if tonumber(rm) ~= 0 then sampAddChatMessage(('Russian Mafia: '..rus..' (+'..rus - srating.mrating.rus..')'), 0x39CCCC) end
@@ -311,7 +311,7 @@ function parseG(text)
   if srating.grating.our == "bag" then our = bag end
   if srating.grating.our == "vag" then our = vag end
   if srating.grating.our == "azg" then our = azg end
-	if our == nil then our = 0 end
+  if our == nil then our = 0 end
   if tonumber(rig) ~= 0 then sampAddChatMessage(('Rifa: '..rig..' ( + '..rig - srating.grating.rig..')'), 0x39CCCC) end
   if tonumber(grg) ~= 0 then sampAddChatMessage(('Grove Street: '..grg..' (+'..grg - srating.grating.grg..')'), 0x39CCCC) end
   if tonumber(bag) ~= 0 then sampAddChatMessage(('Ballas: '..bag..' (+'..bag - srating.grating.bag..')'), 0x39CCCC) end
