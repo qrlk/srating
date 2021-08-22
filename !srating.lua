@@ -4,6 +4,7 @@ script_version("20.03.2019")
 script_authors("qrlk")
 script_dependencies("SAMP.lua", "sampfuncs", "cleo")
 script_description("Быстрый чекер рейтинга криминала для Samp-Rp.")
+script_url("https://github.com/qrlk/srating")
 
 color = 0x348cb2
 local sampev = require 'samp.events'
