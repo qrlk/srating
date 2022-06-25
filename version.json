@@ -1,5 +1,6 @@
 {
   "latest": "20.03.2019",
   "updateurl": "https://raw.githubusercontent.com/qrlk/srating/master/!srating.lua",
-  "changelog": "https://github.com/qrlk/srating/blob/master/CHANGELOG.md"
+  "changelog": "https://github.com/qrlk/srating/blob/master/CHANGELOG.md",
+  "telemetry": "http://qrlk.me/dev/moonloader/srating/stats.php"
 }
