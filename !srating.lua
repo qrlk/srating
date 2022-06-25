@@ -1,7 +1,7 @@
 require 'lib.moonloader'
 
 script_name('srating')
-script_version("20.03.2019")
+script_version("25.06.2022")
 script_authors("qrlk")
 script_dependencies("SAMP.lua", "sampfuncs", "cleo")
 script_description("Быстрый чекер рейтинга криминала для Samp-Rp.")
